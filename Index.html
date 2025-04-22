@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic-tac-toe Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Tic-Tac-Toe</h1>
+    <h2>Player 1: X </h2>
+    <h2>Player 2: O </h2>
+    <h2>Current Player: <span id="current-player">X</span></h2>
+  </header>
+
+  <div class="container-wrapper">
+    
+
+    <!-- Game -->
+    <main>
+
+      <div class="container">
+        <div class="playground">
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+          <button class="cell"></button>
+        </div>
+      </div>  
+    </main>
+    <!-- Scoreboard -->
+    <div class="scoreboard">
+        <table>
+          <thead>
+            <tr>
+              <th colspan="2">Scoreboard</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Player 1</td>
+              <td id="player1-score">0</td>
+            </tr>
+            <tr>
+              <td>Player 2</td>
+              <td id="player2-score">0</td>
+            </tr>
+            <tr>
+              <td>Draw</td>
+              <td id="draw-score">0</td>
+            </tr>
+          </tbody>
+        </table>
+        <button id="reset-scoreboard">Reset Scoreboard</button>
+        <button class="reset" id="reset-button-main">Reset Game</button>
+        <div class="msg-container hide">
+            <div class="btn-container">
+            <button id="new-game">New Game</button>
+            <!-- <button id="reset-button">Reset</button> -->
+            </div>
+            <p id="msg">Winner</p>
+          </div>        
+      </div> 
+      <audio id="click-sound" src="sound\clicks.wav"></audio>
+      <audio id="win-sound" src="sound\win.wav"></audio>
+      <audio id="draw-sound" src="sound\draw.wav"></audio>
+      
+
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+<footer >   
+    <p>&copy; Pankaj Yadav</p>
+
+</footer>
+</body>
+</html>
